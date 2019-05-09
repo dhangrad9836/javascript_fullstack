@@ -1,77 +1,21 @@
-/*//let and const to declare variables
+const name = "Sally";
+const age = 34;
+const pet = "horse";
+//const greeting = "Hello " + name + "you seem to be doing " + greeting;
 
-const player = 'bobby';
-let experience = 100;
-let wizardLevel = false;
+//template strings with backticks
+const greetingBest = `Hello ${name} you seem to be ${age-10}. What a lovely 
+${pet}  you have`;
 
-if (experience > 90) {
-	let wizardLevel = true;
-	//accessing experience inside if statement
-	console.log('inside', wizardLevel);
+
+//default arguments
+
+
+//fat arrow funcitions
+///old of writing function
+functin add(a,b) {
+	retunr a+b;
 }
 
-//accessed experience outside if statment
-console.log('outside', wizardLevel);
-
-
-
-//creating object using const
-const obj = {
-	player: 'bobby',
-	experience: 100,
-	wizardLevel: false
-}
-*/
-
-
-//destructuring 
-const obj = {
-	player: 'bobby',
-	experience: 100,
-	wizardLevel: false
-}
-
-//old way
-const player = obj.player;
-const experience = obj.experience;
-let wizardLevel = obj.wizardLevel;
-
-//destructuring way
-const { player, experience} = obj;
-let { wizardLevel } = obj;
-
-
-
-////////////////////////////////////////////////////
-//declaring object properties
-const name = 'john snow';
-
-const obj = {
-	[name]: 'hello',
-	['ray' + 'smith']: 'hihi'
-}
-
-
-///////////////////////////////////////////
-
-const a = "Simon";
-const b = true;
-const c = {};
-
-const obj = {a,b,c}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+//new way
+const add2 = (a,b) => a + b;
