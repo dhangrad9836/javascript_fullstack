@@ -30,3 +30,6 @@ newFunc();
 //currying
 //the process of converting a function that takes multiple arguments
 //into a function that takes them one at a time
+const multiply = (a,b) => a * b;
+const curriedMultiply = (a) => (b) => a * b;
+curriedMultiply(3);
