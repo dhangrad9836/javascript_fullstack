@@ -25,6 +25,15 @@ newFunc();
 
 //closures = a function runs...a function executes and will never execute again
 //it can be placed in a variable....the child scope has access to the parent scope
+function global() {
+
+	function inner() {
+		console.log("inner");
+	}
+	inner();
+}
+
+global();
 
 
 //currying
