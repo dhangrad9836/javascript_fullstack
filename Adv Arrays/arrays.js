@@ -10,4 +10,14 @@ const newArray = array.forEach((num) => {
 	double.push(num * 2);
 })
 
-console.log(newArray);
+console.log(double);
+
+///important methods for arrays
+//map, filter, reduce
+
+//map
+const mapArray = array.map((num) => {
+	return num * 2;
+});
+
+console.log(mapArray);
