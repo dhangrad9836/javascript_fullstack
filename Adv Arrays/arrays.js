@@ -26,10 +26,36 @@ console.log('map', mapArray);
 
 //filter allows you to use a condition and you must also use a return statement
 const filterArray = array.filter(num => {
-	return num  == 10
+	return num  == 5
 });
 console.log('filter', filterArray);
 
 
 
 //reduce
+//with reduce you have 2 paramaters and the first one is an accumulator
+//the accumulator is a num that you can designate where to start from
+//here we are starting from 5
+
+const reduceArray = array.reduce((accumulator, num) => {
+	return accumulator + num;
+}, 5);
+
+console.log('reduce', reduceArray)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
