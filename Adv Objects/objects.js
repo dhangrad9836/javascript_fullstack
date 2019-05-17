@@ -26,4 +26,48 @@ const object4 = {
 
 //instantiation
 
+class Player {
+	constructor(name, type) {
+		console.log('player',this); 	//this is for testing purposes
+		this.name = name;
+		this.type = type;
+	}
+	//create introduce method and use above constructor properties
+	introduce() {
+		console.log(`Hi I am ${this.name}, I'm a ${this.type}`);
+	}
+
+}
+
+
+//here we are creating a wizard player....note the words wizard "player"
+//so we will use the properties from the Player class by extending it and adding to our Wizard
+class Wizard extends Player {
+	constructor(name, type) {
+		super(name, type) //note whenever you use extends from another class you 
+		console.log('wizard',this) //must use super in order to extend from another class	
+	}
+	//now within our wizard we want to have a play function
+	play() {
+		console.log(`WEEEEEEEE I'm a ${this.type}`)
+	}
+}
+
+//create wizard objects
+const wizard1 = new Wizard('Shelley', 'Healer');
+const wizard2 = new Wizard('Shawn', 'Dark Magic');
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
